@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Radhika Trader Telugu</title>
+  <title>Radhika Trader Telugu | Stock Market Learning</title>
   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -24,451 +24,583 @@ src="https://www.facebook.com/tr?id=3413617175490056&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-<meta
-name="description"
-content="Stock market education and general financial market learning community."
-
->
+  <meta
+    name="description"
+    content="Stock market education, market awareness and financial learning community."
+  >
 
   <style>
+
+    /* =========================
+       RESET
+    ========================== */
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
       min-height: 100vh;
+      background: #020b14;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+
+    /* =========================
+       BACKGROUND
+    ========================== */
+
+    .background {
+      position: fixed;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          rgba(1, 9, 17, 0.78),
+          rgba(1, 9, 17, 0.94)
+        ),
+        url("https://wealthface.com/blog/wp-content/uploads/2022/08/Blog-1-1.png");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      z-index: -3;
+    }
+
+
+    .background::after {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(0, 255, 110, 0.06),
+          transparent 45%
+        );
+    }
+
+
+    /* =========================
+       MAIN
+    ========================== */
+
+    .page {
+      min-height: 100vh;
+
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
-      color: white;
-      background: #07111f;
+
+      padding: 30px 15px;
+    }
+
+
+    .landing-box {
+      width: 100%;
+      max-width: 650px;
+
+      text-align: center;
+
+      padding: 25px 20px 30px;
+
       position: relative;
     }
 
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      background:
-        linear-gradient(
-          rgba(4, 12, 25, 0.88),
-          rgba(4, 12, 25, 0.94)
-        ),
-        url("https://wealthface.com/blog/wp-content/uploads/2022/08/Blog-1-1.png")
-        center/cover no-repeat;
+
+    /* =========================
+       BRAND
+    ========================== */
+
+    .brand {
+      font-size: 32px;
+
+      font-weight: 800;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 25px;
+
+      text-shadow:
+        0 0 15px rgba(255, 255, 255, 0.12);
     }
 
-    .container {
-      width: 100%;
-      max-width: 520px;
-      padding: 35px 25px;
-      text-align: center;
-      border-radius: 24px;
 
-      background: rgba(8, 18, 32, 0.85);
+    /* =========================
+       LOGO
+    ========================== */
 
-      border: 1px solid rgba(255, 255, 255, 0.12);
+    .logo-box {
+      display: flex;
+      justify-content: center;
 
-      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
-
-      backdrop-filter: blur(12px);
+      margin-bottom: 25px;
     }
+
 
     .logo {
-      width: 90px;
-      height: 90px;
+      width: 145px;
+      height: 145px;
+
       object-fit: cover;
 
       border-radius: 50%;
 
-      padding: 4px;
+      padding: 5px;
 
-      background: white;
+      background: #ffffff;
 
-      border: 3px solid #2aabee;
+      border: 2px solid rgba(255, 255, 255, 0.75);
 
-      margin-bottom: 18px;
+      box-shadow:
+        0 0 25px rgba(255, 255, 255, 0.12),
+        0 0 50px rgba(0, 255, 110, 0.08);
     }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 12px;
+
+    /* =========================
+       COUNTDOWN NUMBER
+    ========================== */
+
+    .main-timer {
+      font-size: 95px;
+
+      font-weight: 800;
+
+      color: #36ff00;
+
+      line-height: 1;
+
+      margin-bottom: 35px;
+
+      text-shadow:
+        0 0 15px rgba(54, 255, 0, 0.8),
+        0 0 35px rgba(54, 255, 0, 0.4);
     }
 
-    h1 span {
-      color: #2aabee;
-    }
 
-    .subtitle {
-      color: #bdcad8;
-      font-size: 15px;
-      line-height: 1.7;
-      margin-bottom: 25px;
-    }
+    /* =========================
+       MARKET CONTENT
+    ========================== */
 
-    .content-box {
+    .content {
+      margin: 0 auto 25px;
+      max-width: 520px;
+
       text-align: left;
-      padding: 20px;
-      margin-bottom: 20px;
-
-      border-radius: 16px;
-
-      background: rgba(255, 255, 255, 0.05);
-
-      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-    .content-box h2 {
+
+    .content p {
       font-size: 19px;
-      margin-bottom: 12px;
+
+      font-weight: 700;
+
+      line-height: 1.55;
+
+      margin-bottom: 13px;
+
+      text-align: center;
     }
 
-    .content-box p {
+
+    .check {
+      color: #65ffae;
+    }
+
+
+    .small-heading {
+      margin: 12px 0 18px;
+
+      text-align: center;
+
       font-size: 14px;
-      line-height: 1.7;
-      color: #c2cfdd;
-      margin-bottom: 12px;
+
+      letter-spacing: 1px;
+
+      color: #d4d4d4;
+
+      font-weight: 700;
     }
 
-    .content-box p:last-child {
-      margin-bottom: 0;
-    }
 
-    .features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-bottom: 25px;
-    }
+    /* =========================
+       AGENCY BOX
+    ========================== */
 
-    .feature {
-      padding: 15px;
-      border-radius: 14px;
-      text-align: left;
+    .agency {
+      display: inline-block;
 
-      background: rgba(255, 255, 255, 0.05);
+      margin: 5px 0 35px;
 
-      border: 1px solid rgba(255, 255, 255, 0.07);
-    }
+      padding: 10px 20px;
 
-    .feature-icon {
-      font-size: 22px;
-      margin-bottom: 8px;
-    }
+      border: 1px solid #ff2020;
 
-    .feature h3 {
+      border-radius: 8px;
+
+      background:
+        rgba(100, 0, 0, 0.18);
+
+      color: #ffffff;
+
       font-size: 14px;
-      margin-bottom: 6px;
+
+      font-weight: 700;
+
+      letter-spacing: 0.4px;
     }
 
-    .feature p {
-      font-size: 11px;
-      line-height: 1.5;
-      color: #afbdcb;
+
+    .agency span {
+      color: #ff8b8b;
     }
 
-    .telegram-button {
-      display: block;
+
+    /* =========================
+       BUTTON
+    ========================== */
+
+    .join-button {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
       width: 100%;
 
-      padding: 17px 20px;
+      max-width: 600px;
 
-      border-radius: 14px;
+      margin: 0 auto;
 
-      background: linear-gradient(
-        135deg,
-        #2aabee,
-        #1687c5
-      );
+      min-height: 102px;
 
-      color: white;
+      padding: 20px;
 
       text-decoration: none;
 
-      font-size: 17px;
-      font-weight: bold;
+      color: #050505;
 
-      transition: 0.2s;
+      background:
+        linear-gradient(
+          180deg,
+          #4dff00,
+          #29ff00
+        );
+
+      border-radius: 15px;
+
+      font-size: 25px;
+
+      font-weight: 900;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+
+      box-shadow:
+        0 0 18px rgba(47, 255, 0, 0.75),
+        0 0 40px rgba(47, 255, 0, 0.35);
+
+      transition: 0.25s ease;
     }
 
-    .telegram-button:hover {
-      transform: translateY(-2px);
+
+    .join-button:hover {
+      transform: translateY(-3px) scale(1.01);
+
+      box-shadow:
+        0 0 25px rgba(47, 255, 0, 0.9),
+        0 0 55px rgba(47, 255, 0, 0.5);
     }
 
-    .redirect-box {
-      margin-top: 20px;
 
-      padding: 16px;
-
-      border-radius: 14px;
-
-      background: rgba(255, 255, 255, 0.05);
-    }
+    /* =========================
+       REDIRECT TEXT
+    ========================== */
 
     .redirect-text {
-      color: #bdcad8;
-      font-size: 13px;
+      margin-top: 25px;
+
+      font-size: 15px;
+
+      color: #d4d4d4;
+
+      letter-spacing: 0.5px;
+
+      text-transform: uppercase;
     }
 
-    #timer {
-      margin-top: 8px;
 
-      font-size: 28px;
-      font-weight: bold;
+    #seconds {
+      color: #4dff58;
 
-      color: #2aabee;
+      font-weight: 800;
     }
 
-    .progress {
-      width: 100%;
-      height: 6px;
 
-      margin-top: 12px;
+    /* =========================
+       DISCLAIMER
+    ========================== */
+
+    .disclaimer {
+      max-width: 600px;
+
+      margin: 25px auto 0;
+
+      padding: 14px 18px;
 
       border-radius: 10px;
 
-      overflow: hidden;
+      background:
+        rgba(0, 0, 0, 0.28);
 
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .progress-bar {
-      height: 100%;
-      width: 100%;
-
-      background: #2aabee;
-
-      animation: progress 10s linear forwards;
-    }
-
-    @keyframes progress {
-      from {
-        width: 100%;
-      }
-
-      to {
-        width: 0%;
-      }
-    }
-
-    .disclaimer {
-      margin-top: 20px;
-      padding: 15px;
-
-      border-radius: 14px;
-
-      text-align: left;
-
-      background: rgba(255, 255, 255, 0.035);
-
-      color: rgba(255, 255, 255, 0.65);
+      border:
+        1px solid rgba(255, 255, 255, 0.08);
 
       font-size: 11px;
 
-      line-height: 1.7;
+      line-height: 1.6;
+
+      color:
+        rgba(255, 255, 255, 0.58);
     }
 
-    .footer {
-      margin-top: 20px;
 
-      font-size: 11px;
+    /* =========================
+       MOBILE
+    ========================== */
 
-      color: rgba(255, 255, 255, 0.45);
+    @media (max-width: 600px) {
+
+      .brand {
+        font-size: 24px;
+        letter-spacing: 2px;
+      }
+
+
+      .logo {
+        width: 115px;
+        height: 115px;
+      }
+
+
+      .main-timer {
+        font-size: 75px;
+      }
+
+
+      .content p {
+        font-size: 16px;
+      }
+
+
+      .join-button {
+        min-height: 85px;
+
+        font-size: 20px;
+      }
+
+
+      .landing-box {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
     }
 
-    @media (max-width: 480px) {
-      .container {
-        padding: 28px 18px;
-      }
-
-      h1 {
-        font-size: 28px;
-      }
-
-      .features {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
-
 </head>
+
 
 <body>
 
-  <div class="container">
 
-```
-<!-- Logo -->
-<img
-  class="logo"
-  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjywMTWjhgxhO8y9rwb7UoV6veO4N0HRqpcDIixIY2g&s=10"
-  alt="Radhika Trader Telugu"
->
+  <!-- Background -->
 
-<!-- Heading -->
-<h1>
-  Radhika Trader
-  <span>Telugu</span>
-</h1>
-
-<!-- Intro -->
-<p class="subtitle">
-  A community focused on stock market education,
-  market awareness and general financial learning.
-</p>
-
-<!-- Content -->
-<div class="content-box">
-
-  <h2>Learn. Understand. Stay Informed.</h2>
-
-  <p>
-    Explore general educational content related to stock market
-    concepts and financial market awareness.
-  </p>
-
-  <p>
-    Understanding financial markets and conducting independent
-    research can help individuals make more informed decisions.
-  </p>
-
-</div>
-
-<!-- Features -->
-<div class="features">
-
-  <div class="feature">
-
-    <div class="feature-icon">📚</div>
-
-    <h3>Market Learning</h3>
-
-    <p>
-      Learn and understand general stock market concepts.
-    </p>
-
-  </div>
+  <div class="background"></div>
 
 
-  <div class="feature">
+  <!-- Main Page -->
 
-    <div class="feature-icon">📊</div>
+  <div class="page">
 
-    <h3>Market Awareness</h3>
-
-    <p>
-      Explore general information about financial markets.
-    </p>
-
-  </div>
+    <main class="landing-box">
 
 
-  <div class="feature">
+      <!-- Brand Name -->
 
-    <div class="feature-icon">🔍</div>
-
-    <h3>Research</h3>
-
-    <p>
-      Understand the importance of independent research.
-    </p>
-
-  </div>
+      <div class="brand">
+        Radhika Trader Telugu
+      </div>
 
 
-  <div class="feature">
+      <!-- Logo -->
 
-    <div class="feature-icon">📖</div>
+      <div class="logo-box">
 
-    <h3>Learning Community</h3>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjywMTWjhgxhO8y9rwb7UoV6veO4N0HRqpcDIixIY2g&s=10"
+          alt="Radhika Trader Telugu"
+          class="logo"
+        >
 
-    <p>
-      Join a community focused on financial learning.
-    </p>
+      </div>
 
-  </div>
 
-</div>
+      <!-- Countdown -->
 
-<!-- Telegram Button -->
-<a
-  href="https://t.me/+8iKvaOVeFLkzZDY1"
-  class="telegram-button"
->
-  ✈ Join Telegram Community
-</a>
+      <div
+        class="main-timer"
+        id="bigTimer"
+      >
+        10
+      </div>
 
-<!-- Redirect Timer -->
-<div class="redirect-box">
 
-  <div class="redirect-text">
-    Redirecting you automatically in
-  </div>
+      <!-- Content -->
 
-  <div id="timer">
-    10 sec
-  </div>
+      <div class="content">
 
-  <div class="progress">
-    <div class="progress-bar"></div>
-  </div>
+        <p>
+          <span class="check">☑</span>
+          Stock Market Education & Market Awareness 📈
+        </p>
 
-</div>
 
-<!-- Disclaimer -->
-<div class="disclaimer">
+        <div class="small-heading">
+          LEARN • UNDERSTAND • STAY INFORMED
+        </div>
 
-  <strong>Disclaimer:</strong>
-  This website is intended for educational and informational purposes only.
-  Nothing on this website should be considered financial, investment or
-  trading advice. Financial markets involve risk. Users should conduct
-  their own independent research before making financial decisions.
-  Past performance does not guarantee future results.
 
-</div>
+        <p>
+          <span class="check">☑</span>
+          Market Concepts, Charts & Learning Resources 📊
+        </p>
 
-<!-- Footer -->
-<div class="footer">
-  Ads managed by AK GrowthX Agency
-</div>
-```
+
+        <p>
+          <span class="check">☑</span>
+          Financial Awareness & Independent Research 🔍
+        </p>
+
+
+        <p>
+          <span class="check">☑</span>
+          Risk Management & Responsible Learning 📚
+        </p>
+
+      </div>
+
+
+      <!-- Agency -->
+
+      <div class="agency">
+
+        📢
+        <span>ADS MANAGED BY:</span>
+        AK GrowthX Agency
+
+      </div>
+
+
+      <!-- Telegram Button -->
+
+      <a
+        href="https://t.me/+8iKvaOVeFLkzZDY1"
+        class="join-button"
+        id="joinButton"
+      >
+        Join Free Community 🚀
+      </a>
+
+
+      <!-- Redirect Text -->
+
+      <div class="redirect-text">
+
+        Redirecting in...
+        <span id="seconds">10</span>
+
+      </div>
+
+
+      <!-- Disclaimer -->
+
+      <div class="disclaimer">
+
+        <strong>Disclaimer:</strong>
+        This community and website are intended for educational and informational
+        purposes only. Nothing presented here should be considered financial,
+        investment or trading advice. Financial markets involve risk and users
+        should conduct their own independent research before making financial
+        decisions. Past performance does not guarantee future results.
+
+      </div>
+
+
+    </main>
 
   </div>
+
+
+  <!-- JavaScript -->
 
   <script>
 
     const telegramLink =
       "https://t.me/+8iKvaOVeFLkzZDY1";
 
-    let seconds = 10;
 
-    const timer =
-      document.getElementById("timer");
+    let timeLeft = 10;
 
-    const countdown = setInterval(function () {
 
-      seconds--;
+    const bigTimer =
+      document.getElementById("bigTimer");
 
-      timer.textContent =
-        seconds + " sec";
 
-      if (seconds <= 0) {
+    const secondsText =
+      document.getElementById("seconds");
 
-        clearInterval(countdown);
 
-        window.location.href =
-          telegramLink;
+    const countdown =
+      setInterval(function () {
 
-      }
 
-    }, 1000);
+        timeLeft--;
+
+
+        bigTimer.textContent =
+          timeLeft;
+
+
+        secondsText.textContent =
+          timeLeft;
+
+
+        if (timeLeft <= 0) {
+
+          clearInterval(countdown);
+
+          window.location.href =
+            telegramLink;
+
+        }
+
+
+      }, 1000);
 
   </script>
+
 
 </body>
 </html>
