@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Telugu Trader Radhika</title>
-<!-- Meta Pixel Code -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telugu Trader Radhika</title>
+  <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -21,457 +21,274 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=3413617175490056&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-:root {
-  --green: #38ff78;
-  --cyan: #41dfff;
-  --purple: #a489ff;
-  --orange: #ffc269;
-  --white: #f7f9fc;
-  --muted: #b5bfcd;
-}
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0a0a0f;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      position: relative;
+    }
 
-html, body {
-  min-height: 100%;
-}
+    /* Animated background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(0, 255, 136, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(0, 180, 255, 0.1) 0%, transparent 40%),
+        linear-gradient(180deg, #0a0a0f 0%, #0f1419 100%);
+      z-index: -1;
+    }
 
-body {
-  min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--white);
-  overflow-x: hidden;
-  background:
-    linear-gradient(rgba(3, 10, 18, 0.88), rgba(3, 10, 18, 0.96)),
-    url("https://wealthface.com/blog/wp-content/uploads/2022/08/Blog-1-1.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 16px 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .card {
+      width: 100%;
+      max-width: 420px;
+      margin: 20px;
+      background: rgba(18, 22, 30, 0.85);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 28px;
+      padding: 36px 28px 32px;
+      text-align: center;
+      box-shadow: 
+        0 25px 50px -12px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+    }
 
-.container {
-  width: 100%;
-  max-width: 640px;
-  margin: auto;
-}
+    .brand {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #00ff88;
+      margin-bottom: 28px;
+    }
 
-.card {
-  width: 100%;
-  padding: 28px 20px 22px;
-  border-radius: 26px;
-  background: linear-gradient(180deg, rgba(18, 30, 46, 0.96), rgba(7, 16, 28, 0.98));
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-}
+    .logo-wrap {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 24px;
+    }
 
-.badge {
-  width: fit-content;
-  margin: 0 auto 16px;
-  padding: 8px 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border-radius: 50px;
-  background: rgba(56, 255, 120, 0.07);
-  border: 1px solid rgba(56, 255, 120, 0.25);
-  color: #d7ffe5;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-}
+    .logo-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00ff88, #00b4ff);
+      z-index: -1;
+      animation: pulse-ring 2.5s ease-in-out infinite;
+    }
 
-.badge-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 12px var(--green);
-}
+    .logo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0a0a0f;
+      display: block;
+    }
 
-.brand {
-  text-align: center;
-}
+    @keyframes pulse-ring {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.06); opacity: 1; }
+    }
 
-.brand h1 {
-  font-size: clamp(24px, 5.8vw, 36px);
-  line-height: 1.2;
-  font-weight: 900;
-  letter-spacing: -0.5px;
-  background: linear-gradient(90deg, #ffffff, #bfe8ff, #d6caff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
+    .countdown {
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, #00ff88, #00e5ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 8px 0 6px;
+      letter-spacing: -2px;
+    }
 
-.brand-subtitle {
-  margin-top: 8px;
-  color: var(--orange);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-}
+    .countdown-label {
+      font-size: 13px;
+      color: #8b95a5;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 28px;
+    }
 
-.logo-wrap {
-  width: 110px;
-  height: 110px;
-  margin: 18px auto 16px;
-  padding: 4px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--cyan), var(--green), var(--purple));
-  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.03), 0 12px 35px rgba(0, 0, 0, 0.35);
-}
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
 
-.logo-wrap img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  border-radius: 50%;
-  background: #fff;
-}
+    .feature {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 14px 16px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #e8ecf0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+    }
 
-.description {
-  max-width: 520px;
-  margin: 0 auto 18px;
-  text-align: center;
-  color: #d2dbe6;
-  font-size: 15px;
-  line-height: 1.55;
-}
+    .feature span {
+      font-size: 18px;
+    }
 
-.features {
-  display: grid;
-  gap: 10px;
-  margin-bottom: 18px;
-}
+    .agency {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 80, 80, 0.1);
+      border: 1px solid rgba(255, 80, 80, 0.35);
+      color: #ff6b6b;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+      letter-spacing: 0.3px;
+    }
 
-.feature {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 13px;
-  border-radius: 16px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015));
-  border: 1px solid rgba(255, 255, 255, 0.09);
-}
+    .join-btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+      color: #0a0a0f;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 800;
+      padding: 18px;
+      border-radius: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 8px 25px rgba(0, 255, 136, 0.35);
+      transition: all 0.25s ease;
+      border: none;
+      cursor: pointer;
+    }
 
-.check {
-  width: 34px;
-  height: 34px;
-  min-width: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #79ffa3, var(--green));
-  color: #062312;
-  font-size: 18px;
-  font-weight: 900;
-}
+    .join-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(0, 255, 136, 0.45);
+    }
 
-.feature strong {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 2px;
-}
+    .footer {
+      margin-top: 22px;
+      font-size: 13px;
+      color: #6b7585;
+    }
 
-.feature p {
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.4;
-}
+    .footer strong {
+      color: #00ff88;
+      font-weight: 700;
+    }
 
-/* Clean button - Meta friendly */
-#telegram-join-button {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  min-height: 60px;
-  padding: 16px 18px;
-  border-radius: 18px;
-  text-decoration: none;
-  text-align: center;
-  color: #041108;
-  font-size: clamp(15px, 3.8vw, 17px);
-  font-weight: 900;
-  letter-spacing: 0.3px;
-  line-height: 1.3;
-  background: linear-gradient(90deg, #82ff38 0%, #38ff78 50%, #42d8ff 100%);
-  box-shadow: 0 10px 28px rgba(56, 255, 120, 0.22);
-  border: none;
-  overflow: hidden;
-  position: relative;
-  z-index: 5;
-  cursor: pointer;
-  transition: filter 0.2s ease;
-}
+    @media (max-width: 480px) {
+      .card {
+        margin: 12px;
+        padding: 28px 20px 26px;
+        border-radius: 22px;
+      }
 
-#telegram-join-button:hover {
-  filter: brightness(1.06);
-}
+      .countdown {
+        font-size: 64px;
+      }
 
-.auto-note {
-  margin: 11px 0 12px;
-  text-align: center;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.timer-box {
-  padding: 12px 14px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.timer-label {
-  text-align: center;
-  color: #b4c0cf;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-}
-
-.timer-row {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 7px;
-  margin: 6px 0;
-}
-
-#countdown {
-  font-size: 40px;
-  line-height: 1;
-  font-weight: 900;
-  color: var(--green);
-  text-shadow: 0 0 20px rgba(56, 255, 120, 0.25);
-}
-
-.timer-seconds {
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.progress {
-  width: 100%;
-  height: 5px;
-  overflow: hidden;
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.09);
-}
-
-#progressBar {
-  width: 100%;
-  height: 100%;
-  display: block;
-  transform-origin: left;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--green), var(--cyan), var(--purple));
-  transition: transform 1s linear;
-}
-
-.redirect-note {
-  margin-top: 7px;
-  text-align: center;
-  color: #8f9bab;
-  font-size: 11px;
-}
-
-.redirect-note b {
-  color: var(--green);
-}
-
-.agency-note {
-  margin-top: 18px;
-  text-align: center;
-  color: #8a95a5;
-  font-size: 11px;
-  line-height: 1.5;
-}
-
-.disclaimer {
-  margin-top: 16px;
-  padding: 14px 13px;
-  border-radius: 16px;
-  background: rgba(255, 184, 80, 0.04);
-  border: 1px solid rgba(255, 194, 105, 0.14);
-}
-
-.disclaimer-title {
-  margin-bottom: 7px;
-  text-align: center;
-  color: #ffc978;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-}
-
-.disclaimer p {
-  color: #aeb8c6;
-  font-size: 11px;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.footer {
-  margin-top: 14px;
-  text-align: center;
-  color: #7f8b9a;
-  font-size: 10px;
-  line-height: 1.5;
-}
-
-@media (max-width: 480px) {
-  body {
-    padding: 10px 8px;
-  }
-  .card {
-    padding: 22px 14px 18px;
-    border-radius: 22px;
-  }
-  #telegram-join-button {
-    min-height: 56px;
-    padding: 14px 12px;
-    font-size: 15px;
-  }
-  .feature {
-    padding: 11px 10px;
-  }
-}
-</style>
+      .logo-wrap, .logo {
+        width: 115px;
+        height: 115px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-<main class="container">
-  <section class="card">
 
-    <div class="badge">
-      <span class="badge-dot"></span>
-      MARKET RESEARCH COMMUNITY
-    </div>
+  <div class="card">
 
-    <div class="brand">
-      <h1>Telugu Trader Radhika</h1>
-      <div class="brand-subtitle">SEBI RESEARCH ANALYST</div>
-    </div>
+    <div class="brand">Telugu Trader Radhika</div>
 
     <div class="logo-wrap">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjywMTWjhgxhO8y9rwb7UoV6veO4N0HRqpcDIixIY2g&s=10" alt="Telugu Trader Radhika">
+      <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjywMTWjhgxhO8y9rwb7UoV6veO4N0HRqpcDIixIY2g&s=10" 
+        alt="Telugu Trader Radhika" 
+        class="logo"
+      >
     </div>
 
-    <p class="description">
-      Market research, trading insights and educational updates — join our Telegram community for market-focused information.
-    </p>
+    <div class="countdown" id="countdown">15</div>
+    <div class="countdown-label">Seconds Left</div>
 
     <div class="features">
       <div class="feature">
-        <div class="check">✓</div>
-        <div>
-          <strong>Market Research & Insights</strong>
-          <p>Research-focused market updates and analytical insights.</p>
-        </div>
+        <span>✅</span>
+        SMC • Gold • BTC Setups
       </div>
-
       <div class="feature">
-        <div class="check">✓</div>
-        <div>
-          <strong>Trading & Market Analysis</strong>
-          <p>Structured market observations and educational analysis.</p>
-        </div>
+        <span>🏆</span>
+        Smart Money Strategies & Tips
       </div>
-
       <div class="feature">
-        <div class="check">✓</div>
-        <div>
-          <strong>Risk Awareness</strong>
-          <p>Focus on informed decision-making and market risk awareness.</p>
-        </div>
+        <span>📈</span>
+        Daily Expert Trading Insights
+      </div>
+      <div class="feature">
+        <span>🛡️</span>
+        Proper Risk Management
       </div>
     </div>
 
-    <!-- Clean button for Meta tracking -->
-    <a id="telegram-join-button" href="https://t.me/+8iKvaOVeFLkzZDY1">
-      JOIN TELEGRAM CHANNEL 🚀
+    <div class="agency">
+      📢 Ads Managed by AK GrowthX Agency
+    </div>
+
+    <a href="https://t.me/+8iKvaOVeFLkzZDY1" class="join-btn">
+      Join Free Channel 🚀
     </a>
 
-    <div class="auto-note">
-      Or wait — Telegram will open automatically.
-    </div>
-
-    <div class="timer-box">
-      <div class="timer-label">Telegram opens automatically in</div>
-      <div class="timer-row">
-        <div id="countdown">15</div>
-        <div class="timer-seconds">seconds</div>
-      </div>
-      <div class="progress">
-        <span id="progressBar"></span>
-      </div>
-      <div class="redirect-note">
-        Redirecting in <b id="footerCount">15</b> seconds…
-      </div>
-    </div>
-
-    <div class="agency-note">
-      Ads managed by AK GrowthX Agency
-    </div>
-
-    <div class="disclaimer">
-      <div class="disclaimer-title">⚠ Disclaimer & Risk Disclosure</div>
-      <p>
-        This community is intended for informational and educational purposes. Content shared should not be treated as a guarantee of profit, income or investment returns. Financial markets are subject to market risk and losses may occur.
-      </p>
-      <br>
-      <p>
-        Past performance does not guarantee future results. Members should conduct their own research and make decisions based on their individual financial circumstances and risk tolerance. No assured or guaranteed returns are promised.
-      </p>
-    </div>
-
     <div class="footer">
-      © Telugu Trader Radhika · Market Research & Educational Content
+      Free joining ends in <strong id="footer-count">15</strong> seconds
     </div>
 
-  </section>
-</main>
+  </div>
 
-<script>
-const redirectUrl = "https://t.me/+8iKvaOVeFLkzZDY1";
-let count = 15;
+  <script>
+    let count = 15;
+    const countEl = document.getElementById('countdown');
+    const footerEl = document.getElementById('footer-count');
+    const redirectUrl = "https://t.me/+8iKvaOVeFLkzZDY1";
 
-const countdown = document.getElementById("countdown");
-const footerCount = document.getElementById("footerCount");
-const progressBar = document.getElementById("progressBar");
+    const timer = setInterval(() => {
+      count--;
+      countEl.innerText = count;
+      footerEl.innerText = count;
 
-const timer = setInterval(function () {
-  count--;
-  countdown.textContent = count;
-  footerCount.textContent = count;
-  progressBar.style.transform = "scaleX(" + Math.max(count, 0) / 15 + ")";
-
-  if (count <= 0) {
-    clearInterval(timer);
-    window.location.href = redirectUrl;
-  }
-}, 1000);
-</script>
+      if (count <= 0) {
+        clearInterval(timer);
+        window.location.href = redirectUrl;
+      }
+    }, 1000);
+  </script>
 
 </body>
 </html>
