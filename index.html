@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Telugu Trader Radhika</title>
+
+  <title>Radhika Trader Telugu</title>
   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -21,273 +23,451 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=3413617175490056&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
+<meta
+name="description"
+content="Stock market education and general financial market learning community."
+
+>
+
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
 
     body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      background: #0a0a0f;
-      color: #ffffff;
       min-height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
-      overflow-x: hidden;
+      align-items: center;
+      padding: 20px;
+      color: white;
+      background: #07111f;
       position: relative;
     }
 
-    /* Animated background */
     body::before {
-      content: '';
+      content: "";
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: 
-        radial-gradient(circle at 20% 30%, rgba(0, 255, 136, 0.12) 0%, transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(0, 180, 255, 0.1) 0%, transparent 40%),
-        linear-gradient(180deg, #0a0a0f 0%, #0f1419 100%);
+      inset: 0;
       z-index: -1;
+      background:
+        linear-gradient(
+          rgba(4, 12, 25, 0.88),
+          rgba(4, 12, 25, 0.94)
+        ),
+        url("https://wealthface.com/blog/wp-content/uploads/2022/08/Blog-1-1.png")
+        center/cover no-repeat;
     }
 
-    .card {
+    .container {
       width: 100%;
-      max-width: 420px;
-      margin: 20px;
-      background: rgba(18, 22, 30, 0.85);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 28px;
-      padding: 36px 28px 32px;
+      max-width: 520px;
+      padding: 35px 25px;
       text-align: center;
-      box-shadow: 
-        0 25px 50px -12px rgba(0, 0, 0, 0.6),
-        0 0 0 1px rgba(255, 255, 255, 0.05);
-    }
+      border-radius: 24px;
 
-    .brand {
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: #00ff88;
-      margin-bottom: 28px;
-    }
+      background: rgba(8, 18, 32, 0.85);
 
-    .logo-wrap {
-      position: relative;
-      width: 130px;
-      height: 130px;
-      margin: 0 auto 24px;
-    }
+      border: 1px solid rgba(255, 255, 255, 0.12);
 
-    .logo-wrap::before {
-      content: '';
-      position: absolute;
-      inset: -4px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #00ff88, #00b4ff);
-      z-index: -1;
-      animation: pulse-ring 2.5s ease-in-out infinite;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+
+      backdrop-filter: blur(12px);
     }
 
     .logo {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
+      width: 90px;
+      height: 90px;
       object-fit: cover;
-      border: 4px solid #0a0a0f;
-      display: block;
+
+      border-radius: 50%;
+
+      padding: 4px;
+
+      background: white;
+
+      border: 3px solid #2aabee;
+
+      margin-bottom: 18px;
     }
 
-    @keyframes pulse-ring {
-      0%, 100% { transform: scale(1); opacity: 0.8; }
-      50% { transform: scale(1.06); opacity: 1; }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
     }
 
-    .countdown {
-      font-size: 72px;
-      font-weight: 800;
-      line-height: 1;
-      background: linear-gradient(135deg, #00ff88, #00e5ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin: 8px 0 6px;
-      letter-spacing: -2px;
+    h1 span {
+      color: #2aabee;
     }
 
-    .countdown-label {
-      font-size: 13px;
-      color: #8b95a5;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 28px;
+    .subtitle {
+      color: #bdcad8;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .content-box {
+      text-align: left;
+      padding: 20px;
+      margin-bottom: 20px;
+
+      border-radius: 16px;
+
+      background: rgba(255, 255, 255, 0.05);
+
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .content-box h2 {
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .content-box p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #c2cfdd;
+      margin-bottom: 12px;
+    }
+
+    .content-box p:last-child {
+      margin-bottom: 0;
     }
 
     .features {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 12px;
-      margin-bottom: 28px;
+      margin-bottom: 25px;
     }
 
     .feature {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 15px;
       border-radius: 14px;
-      padding: 14px 16px;
-      font-size: 15px;
-      font-weight: 500;
-      color: #e8ecf0;
-      display: flex;
-      align-items: center;
-      gap: 12px;
       text-align: left;
+
+      background: rgba(255, 255, 255, 0.05);
+
+      border: 1px solid rgba(255, 255, 255, 0.07);
     }
 
-    .feature span {
-      font-size: 18px;
+    .feature-icon {
+      font-size: 22px;
+      margin-bottom: 8px;
     }
 
-    .agency {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255, 80, 80, 0.1);
-      border: 1px solid rgba(255, 80, 80, 0.35);
-      color: #ff6b6b;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 8px 16px;
-      border-radius: 50px;
-      margin-bottom: 24px;
-      letter-spacing: 0.3px;
+    .feature h3 {
+      font-size: 14px;
+      margin-bottom: 6px;
     }
 
-    .join-btn {
+    .feature p {
+      font-size: 11px;
+      line-height: 1.5;
+      color: #afbdcb;
+    }
+
+    .telegram-button {
       display: block;
       width: 100%;
-      background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
-      color: #0a0a0f;
+
+      padding: 17px 20px;
+
+      border-radius: 14px;
+
+      background: linear-gradient(
+        135deg,
+        #2aabee,
+        #1687c5
+      );
+
+      color: white;
+
       text-decoration: none;
-      font-size: 18px;
-      font-weight: 800;
-      padding: 18px;
-      border-radius: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      box-shadow: 0 8px 25px rgba(0, 255, 136, 0.35);
-      transition: all 0.25s ease;
-      border: none;
-      cursor: pointer;
+
+      font-size: 17px;
+      font-weight: bold;
+
+      transition: 0.2s;
     }
 
-    .join-btn:hover {
+    .telegram-button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 12px 30px rgba(0, 255, 136, 0.45);
+    }
+
+    .redirect-box {
+      margin-top: 20px;
+
+      padding: 16px;
+
+      border-radius: 14px;
+
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .redirect-text {
+      color: #bdcad8;
+      font-size: 13px;
+    }
+
+    #timer {
+      margin-top: 8px;
+
+      font-size: 28px;
+      font-weight: bold;
+
+      color: #2aabee;
+    }
+
+    .progress {
+      width: 100%;
+      height: 6px;
+
+      margin-top: 12px;
+
+      border-radius: 10px;
+
+      overflow: hidden;
+
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 100%;
+
+      background: #2aabee;
+
+      animation: progress 10s linear forwards;
+    }
+
+    @keyframes progress {
+      from {
+        width: 100%;
+      }
+
+      to {
+        width: 0%;
+      }
+    }
+
+    .disclaimer {
+      margin-top: 20px;
+      padding: 15px;
+
+      border-radius: 14px;
+
+      text-align: left;
+
+      background: rgba(255, 255, 255, 0.035);
+
+      color: rgba(255, 255, 255, 0.65);
+
+      font-size: 11px;
+
+      line-height: 1.7;
     }
 
     .footer {
-      margin-top: 22px;
-      font-size: 13px;
-      color: #6b7585;
-    }
+      margin-top: 20px;
 
-    .footer strong {
-      color: #00ff88;
-      font-weight: 700;
+      font-size: 11px;
+
+      color: rgba(255, 255, 255, 0.45);
     }
 
     @media (max-width: 480px) {
-      .card {
-        margin: 12px;
-        padding: 28px 20px 26px;
-        border-radius: 22px;
+      .container {
+        padding: 28px 18px;
       }
 
-      .countdown {
-        font-size: 64px;
+      h1 {
+        font-size: 28px;
       }
 
-      .logo-wrap, .logo {
-        width: 115px;
-        height: 115px;
+      .features {
+        grid-template-columns: 1fr;
       }
     }
   </style>
+
 </head>
+
 <body>
 
-  <div class="card">
+  <div class="container">
 
-    <div class="brand">Telugu Trader Radhika</div>
+```
+<!-- Logo -->
+<img
+  class="logo"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjywMTWjhgxhO8y9rwb7UoV6veO4N0HRqpcDIixIY2g&s=10"
+  alt="Radhika Trader Telugu"
+>
 
-    <div class="logo-wrap">
-      <img 
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjywMTWjhgxhO8y9rwb7UoV6veO4N0HRqpcDIixIY2g&s=10" 
-        alt="Telugu Trader Radhika" 
-        class="logo"
-      >
-    </div>
+<!-- Heading -->
+<h1>
+  Radhika Trader
+  <span>Telugu</span>
+</h1>
 
-    <div class="countdown" id="countdown">15</div>
-    <div class="countdown-label">Seconds Left</div>
+<!-- Intro -->
+<p class="subtitle">
+  A community focused on stock market education,
+  market awareness and general financial learning.
+</p>
 
-    <div class="features">
-      <div class="feature">
-        <span>✅</span>
-        SMC • Gold • BTC Setups
-      </div>
-      <div class="feature">
-        <span>🏆</span>
-        Smart Money Strategies & Tips
-      </div>
-      <div class="feature">
-        <span>📈</span>
-        Daily Expert Trading Insights
-      </div>
-      <div class="feature">
-        <span>🛡️</span>
-        Proper Risk Management
-      </div>
-    </div>
+<!-- Content -->
+<div class="content-box">
 
-    <div class="agency">
-      📢 Ads Managed by AK GrowthX Agency
-    </div>
+  <h2>Learn. Understand. Stay Informed.</h2>
 
-    <a href="https://t.me/+8iKvaOVeFLkzZDY1" class="join-btn">
-      Join Free Channel 🚀
-    </a>
+  <p>
+    Explore general educational content related to stock market
+    concepts and financial market awareness.
+  </p>
 
-    <div class="footer">
-      Free joining ends in <strong id="footer-count">15</strong> seconds
-    </div>
+  <p>
+    Understanding financial markets and conducting independent
+    research can help individuals make more informed decisions.
+  </p>
+
+</div>
+
+<!-- Features -->
+<div class="features">
+
+  <div class="feature">
+
+    <div class="feature-icon">📚</div>
+
+    <h3>Market Learning</h3>
+
+    <p>
+      Learn and understand general stock market concepts.
+    </p>
+
+  </div>
+
+
+  <div class="feature">
+
+    <div class="feature-icon">📊</div>
+
+    <h3>Market Awareness</h3>
+
+    <p>
+      Explore general information about financial markets.
+    </p>
+
+  </div>
+
+
+  <div class="feature">
+
+    <div class="feature-icon">🔍</div>
+
+    <h3>Research</h3>
+
+    <p>
+      Understand the importance of independent research.
+    </p>
+
+  </div>
+
+
+  <div class="feature">
+
+    <div class="feature-icon">📖</div>
+
+    <h3>Learning Community</h3>
+
+    <p>
+      Join a community focused on financial learning.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- Telegram Button -->
+<a
+  href="https://t.me/+8iKvaOVeFLkzZDY1"
+  class="telegram-button"
+>
+  ✈ Join Telegram Community
+</a>
+
+<!-- Redirect Timer -->
+<div class="redirect-box">
+
+  <div class="redirect-text">
+    Redirecting you automatically in
+  </div>
+
+  <div id="timer">
+    10 sec
+  </div>
+
+  <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+
+</div>
+
+<!-- Disclaimer -->
+<div class="disclaimer">
+
+  <strong>Disclaimer:</strong>
+  This website is intended for educational and informational purposes only.
+  Nothing on this website should be considered financial, investment or
+  trading advice. Financial markets involve risk. Users should conduct
+  their own independent research before making financial decisions.
+  Past performance does not guarantee future results.
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  Ads managed by AK GrowthX Agency
+</div>
+```
 
   </div>
 
   <script>
-    let count = 15;
-    const countEl = document.getElementById('countdown');
-    const footerEl = document.getElementById('footer-count');
-    const redirectUrl = "https://t.me/+8iKvaOVeFLkzZDY1";
 
-    const timer = setInterval(() => {
-      count--;
-      countEl.innerText = count;
-      footerEl.innerText = count;
+    const telegramLink =
+      "https://t.me/+8iKvaOVeFLkzZDY1";
 
-      if (count <= 0) {
-        clearInterval(timer);
-        window.location.href = redirectUrl;
+    let seconds = 10;
+
+    const timer =
+      document.getElementById("timer");
+
+    const countdown = setInterval(function () {
+
+      seconds--;
+
+      timer.textContent =
+        seconds + " sec";
+
+      if (seconds <= 0) {
+
+        clearInterval(countdown);
+
+        window.location.href =
+          telegramLink;
+
       }
+
     }, 1000);
+
   </script>
 
 </body>
